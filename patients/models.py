@@ -8,6 +8,7 @@ class Patient(models.Model):
     age = models.IntegerField(blank=False, default='')
     dob = models.CharField(max_length=90, blank=False, default='')
     active = models.BooleanField(default=False)
+    dactive = models.BooleanField(default=False)
 
     def __str__(self):
         return self.name
