@@ -17,3 +17,7 @@ class Casepaper(models.Model):
     patient = models.ForeignKey(Patient, on_delete=models.CASCADE)
     cid = models.IntegerField(blank=False, default=1)
     ctype = models.CharField(max_length=90, blank=False, default='')
+
+    def __str__(self):  
+        return self.name
+

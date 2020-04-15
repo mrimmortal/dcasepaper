@@ -6,15 +6,10 @@ class PatientSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Patient
-        fields = ('id',
-                  'name',
-                  'age',
-                  'active')
+        fields = '__all__'
 
 class CasepaperSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Casepaper
-        fields = ('Patient',
-                  'cid',
-                  'ctype')
+        fields = '__all__'
